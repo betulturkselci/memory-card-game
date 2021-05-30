@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>Oyun</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <style type="text/css">
+            body { background-image: radial-gradient(circle at 100% , #90EE90, #2196F3); ;
+    background-size: cover; background-repeat: no-repeat;
+    background-attachment: fixed; }
+            p { font-family: Tahoma, Verdana; font-size: 12px; }
+            .flipper .front{
+                background: #1f8094;
+            }
+         </style>
+    
+    <header>
+        <div class="baslik">ŞEKİLLER</div>
+        <div class="container" style="margin-top: 20px;">            
+            <div class="row" >
+                <div class="col-md-2 "><p id="countdown" class="zaman">50</p> </div>
+                <div class="col-md-6"><p id="demo" class="uyari" ></p> </div>
+                <div class="col-md-4"> </div>
+            </div>
+        </div>        
+    </header>
+
+    <audio id="dogru">
+        <source src="sesler/dogru.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="yanlis">
+        <source src="sesler/yanlis.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="basari">
+        <source src="sesler/basari.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="fail">
+        <source src="sesler/fail.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="game" style="top: 150px; width: 1000px;" >
+        <div class="flip-container">
+        <div class="flipper">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        </div>
+        <div class="flip-container">
+        <div class="flipper">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        </div>
+        <div class="flip-container">
+        <div class="flipper">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        </div>
+        <div class="flip-container">
+        <div class="flipper">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        </div>
+        <div class="flip-container">
+        <div class="flipper">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        </div>
+        <div class="flip-container">
+        <div class="flipper">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        </div>
+        <div class="flip-container">
+        <div class="flipper">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        </div>
+        <div class="flip-container">
+        <div class="flipper">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        </div>
+        <div class="flip-container">
+        <div class="flipper">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        </div>
+        <div class="flip-container">
+        <div class="flipper">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        </div>
+        <div class="flip-container">
+            <div class="flipper">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            </div>
+            <div class="flip-container">
+            <div class="flipper">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            </div>
+            <div class="flip-container">
+            <div class="flipper">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            </div>
+            <div class="flip-container">
+            <div class="flipper">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            </div>
+            <div class="flip-container">
+            <div class="flipper">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            </div>
+            <div class="flip-container">
+            <div class="flipper">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            </div>
+            <div class="flip-container">
+            <div class="flipper">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            </div>
+            <div class="flip-container">
+            <div class="flipper">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            </div>
+        
+    </div>
+
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-12">                  
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">TEBRİKLER!</h5>                          
+                          </div>
+                          <div class="modal-body">
+                          PUAN:900
+                          </div>
+                          <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="window.close()">Çıkış</button>
+                          <a href="game2.html"><button type="button" class="btn btn-primary">Yeniden Oyna</button></a>
+                          </div>
+                      </div>
+                      </div>
+                   </div>
+            </div>
+        </div> 
+    </div> 
+
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-12">                  
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel2">SÜRENİZ BİTTİ!</h5>                          
+                          </div>
+                          <div class="modal-body">
+                          ZAMAN:50 saniye
+                          </div>
+                          <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="window.close()">Çıkış</button>
+                          <a href="game2.html"><button type="button" class="btn btn-primary">Yeniden Oyna</button></a>
+                          </div>
+                      </div>
+                      </div>
+                   </div>
+            </div>
+        </div> 
+    </div> 
+
+    <style type="text/css">
+    .flip-container, .front, .back {
+    width: 14%;
+     }
+     .flip-container{
+         height: 22%;
+     }
+    </style>
+</body>
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
+    <script>
+    window.console = window.console || function(t) {};
+    </script>
+    <script src="scriptdemo.js"></script>
+    
+    <script type="text/javascript">
+       var cards = ['yildiz', 'ucgen', 'sekizgen', 'oval', 'kare','kalp', 'dortgen', 'circle', 'besgen'];
+       var sure = 49;
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,303 @@
+body {
+    /* background: #FFEAC9; */
+     background-image: radial-gradient(circle at 100% , #8ecdff, #9c27b0); 
+    /* background: radial-gradient(circle at 100% , #90EE90, #2196F3); */
+    /* background-image: url("images/space3.jpg"); */
+    background-size: cover;
+    /* color: white; */
+    font-family: Garamond, serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  body header {
+    height: 10vh;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+  }
+  @media screen and (min-width: 37.4375em) {
+    body header {
+      width: 500px;
+    }
+  }
+  body header .timer {
+    position: absolute;
+    top: 14%;
+    left: 3%;
+    font-size: 23px;
+    background: #FFAD29;
+    width: 8vh;
+    height: 8vh;
+    line-height: 8vh;
+    border-radius: 4vh;
+    text-align: center;
+  }
+  .game {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 37.4375em) {
+    .game {
+      width: 800px;
+    }
+  }
+  .flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    perspective: 1000;
+    height: 22%;
+    margin: 1%;
+    cursor: pointer;
+  }
+  .flip-container.flip .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  .flip-container, .front, .back {
+    width: 18%;
+    float: left;
+    border-radius: 12px;
+  }
+  .flipper {
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    height: 100%;
+    position: relative;
+  }
+  .flipper .front, .flipper .back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -ms-backface-visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* box-shadow: #FFCCA9 0 8px 2px; */
+  }
+  .flipper .front {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    background: #DDA0DD;
+  }
+  .flipper .back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    border: 1px solid #E8E8E8;
+  }
+
+
+  #dunya {
+    background: white url("gezegen/dunya.png") no-repeat center;
+    background-size: contain;
+  }
+  #ay {
+    background: white url("gezegen/ay.png") no-repeat center;
+    background-size: contain;
+  }
+  #gunes {
+    background: white url("gezegen/gunes.png") no-repeat center;
+    background-size: contain;
+  }
+  #neptun {
+    background: white url("gezegen/neptun.png") no-repeat center;
+    background-size: contain;
+  }
+  #jupiter {
+    background: white url("gezegen/jupiter.png") no-repeat center;
+    background-size: contain;
+  }
+  #yildiz {
+    background: white url("sekiller/yildiz.png") no-repeat center;
+    background-size: contain;
+  }
+  #ucgen {
+    background: white url("sekiller/ucgen.png") no-repeat center;
+    background-size: contain;
+  }
+  #sekizgen {
+    background: white url("sekiller/sekizgen.png") no-repeat center;
+    background-size: contain;
+  }
+  #oval {
+    background: white url("sekiller/oval.png") no-repeat center;
+    background-size: contain;
+  }
+  #kare {
+    background: white url("sekiller/kare.png") no-repeat center;
+    background-size: contain;
+  }
+  #kalp {
+    background: white url("sekiller/kalp.png") no-repeat center;
+    background-size: contain;
+  }
+  #dortgen {
+    background: white url("sekiller/dortgen.png") no-repeat center;
+    background-size: contain;
+  }
+  #circle {
+    background: white url("sekiller/circle.png") no-repeat center;
+    background-size: contain;
+  }
+  #besgen {
+    background: white url("sekiller/besgen.png") no-repeat center;
+    background-size: contain;
+  }
+  #balik {
+    background: white url("hayvanlar/balik.png") no-repeat center;
+    background-size: contain;
+  }
+  #baykus {
+    background: white url("hayvanlar/baykus.png") no-repeat center;
+    background-size: contain;
+  }
+  #koala {
+    background: white url("hayvanlar/koala.png") no-repeat center;
+    background-size: contain;
+  }
+  #kurbaga {
+    background: white url("hayvanlar/kurbaga.png") no-repeat center;
+    background-size: contain;
+  }
+  #marti {
+    background: white url("hayvanlar/marti.png") no-repeat center;
+    background-size: contain;
+  }
+  #panda {
+    background: white url("hayvanlar/panda.png") no-repeat center;
+    background-size: contain;
+  }
+  #sincap {
+    background: white url("hayvanlar/sincap.png") no-repeat center;
+    background-size: contain;
+  }
+  #yilan {
+    background: white url("hayvanlar/yilan.png") no-repeat center;
+    background-size: contain;
+  }
+  #zebra {
+    background: white url("hayvanlar/zebra.png") no-repeat center;
+    background-size: contain;
+  }
+  #turtle {
+    background: white url("hayvanlar/turtle.png") no-repeat center;
+    background-size: contain;
+  }
+
+
+
+  .container {
+    width: 960px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    top: 50px;
+}
+
+.card {
+  width: 250px;
+  display: grid;   
+  grid-template-columns: 300px;
+  grid-template-rows: 300px;
+  grid-template-areas: "image" ;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+  top: 100px;
+}
+
+
+.card-image {
+  grid-area: image;
+  /* background: url("images/cat2.jpg"); */
+  background-color: #FFB6C1;
+  background-size: cover; 
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+a{
+  text-decoration:none;
+}
+a:link {
+  text-decoration:none;
+}
+a:visited {
+text-decoration:none;
+}
+a:hover {
+  color: black;
+}
+
+.zaman{
+  font-family: Garamond, serif;
+    font-size: 30px;
+    text-align: center;
+    background: #D3D3D3;
+    width: 8vh;
+    height: 8vh;
+    line-height: 8vh;
+    border-radius: 4vh;
+}
+.baslik{
+  text-align: center;
+  font-family: Garamond, serif;
+  font-size: 50px;
+}
+.uyari{
+  text-align: center;
+  font-family: Garamond, serif;
+  font-size: 20px;
+  /* background: #D3D3D3;   */
+    width: 30vh;
+    height: 8vh;
+    line-height: 8vh;
+    border-radius: 4vh;
+    
+}
+.modal-body{
+  text-align: center;
+}
+.modal-header{
+ justify-content: center;
+
+}
+.modal-footer{
+  justify-content: center;
+}
